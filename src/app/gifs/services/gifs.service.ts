@@ -21,7 +21,7 @@ export class GifsService {
     this.http.get<GiphyResponse>(`${environment.urlBase}/gifs/trending`,{
       params: {
         api_key: environment.apiKey,
-        limit: 40
+        limit: 50
       }
     }).subscribe((response) => {
       // console.log(response.data[0].images.original.url);
